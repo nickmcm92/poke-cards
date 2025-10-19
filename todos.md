@@ -1,15 +1,15 @@
 # Pokémon Card Collection Game - Todo List
 
 ## 1. Set up PokeAPI Integration
-- [ ] Create `src/services/pokeapi.js` service file
-  - [ ] Implement function to fetch original 151 Pokémon data
-  - [ ] Add method to get pixel sprites by Pokémon ID
-  - [ ] Add method to get basic Pokémon information (name, types, etc.)
-  - [ ] Implement error handling for API requests
-  - [ ] Add caching layer to prevent excessive API calls
-- [ ] Create types/interfaces for Pokémon data
-- [ ] Add API response validation
-- [ ] Write basic tests for API service
+- [x] Create `src/services/pokeapi.ts` service file
+  - [x] Implement function to fetch original 151 Pokémon data
+  - [x] Add method to get pixel sprites by Pokémon ID
+  - [x] Add method to get basic Pokémon information (name, types, etc.)
+  - [x] Implement error handling for API requests
+  - [x] Add caching layer to prevent excessive API calls
+- [x] Create types/interfaces for Pokémon data
+- [x] Add API response validation
+- [x] Write basic tests for API service
 
 ## 2. Implement Game State Management
 - [ ] Set up React Context or Redux store
