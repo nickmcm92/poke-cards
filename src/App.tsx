@@ -1,13 +1,13 @@
 import React from 'react';
+import { TestPage } from './pages/TestPage';
 import './App.css';
 
-const App: React.FC = () => {
+function App() {
   return (
     <main className="app">
-      <h1>Poke Cards</h1>
-      <p>Welcome — start building your Pokemon card app here.</p>
+      <TestPage />
     </main>
   );
-};
+}
 
 export default App;

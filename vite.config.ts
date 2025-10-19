@@ -8,6 +8,8 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': '/src',
+      'react': 'react',
+      'react-dom': 'react-dom',
     },
   },
 });
