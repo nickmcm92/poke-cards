@@ -8,19 +8,31 @@
     "preview": "vite preview --port 4173",
     "format": "prettier --write .",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui"
   },
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
     "@vitejs/plugin-react": "^5.0.4",
-    "vite": "^7.1.10",
+    "@vitejs/plugin-react-swc": "^4.1.0",
+    "@vitest/coverage-c8": "^0.33.0",
     "gh-pages": "^6.3.0",
-    "prettier": "^3.0.0"
-  }
-  ,
+    "jsdom": "^27.0.1",
+    "prettier": "^3.0.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.10",
+    "vitest": "^3.2.4"
+  },
   "engines": {
     "node": ">=22"
   }
