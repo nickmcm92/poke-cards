@@ -11,15 +11,15 @@
 - [x] Add API response validation
 - [x] Write basic tests for API service
 
-## 2. Implement Game State Management
-- [ ] Set up React Context or Redux store
-  - [ ] Create player state (money, collection)
-  - [ ] Create game settings state (cooldowns, prices)
-  - [ ] Add action creators and reducers
-- [ ] Implement state persistence helpers
-- [ ] Create custom hooks for accessing game state
-- [ ] Add state change listeners for save triggers
-- [ ] Document state structure
+## 2. Implement Game State Management with Zustand
+- [x] Set up Zustand store
+  - [x] Create player slice (money, collection)
+  - [x] Create settings slice (cooldowns, prices)
+  - [x] Add action functions for state updates
+- [x] Add persistence middleware
+- [x] Create custom hooks/selectors
+- [x] Implement auto-save functionality
+- [x] Document store structure
 
 ## 3. Create Work Button Component
 - [ ] Create `src/components/WorkButton.jsx`
