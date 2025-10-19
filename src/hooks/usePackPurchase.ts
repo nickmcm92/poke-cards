@@ -6,7 +6,7 @@ import type { Pokemon } from '../types/pokemon';
 export const usePackPurchase = () => {
   const { settings, player, spendMoney, addCardToCollection } = useStore();
 
-  const purchasePack = useCallback(async () => {
+  const purchasePack = useCallback(async (): Promise<Pokemon[]> => {
     try {
       // Check if player has enough money
       if (player.money < settings.packPrice) {
@@ -24,7 +24,7 @@ export const usePackPurchase = () => {
 
       // Fetch all Pokémon in parallel
       const pokemonPromises = randomPokemonIds.map(id => fetchPokemonDetails(id));
-      const pokemonCards = await Promise.all(pokemonPromises);
+      const pokemonCards: Pokemon[] = await Promise.all(pokemonPromises);
 
       // Add each card to collection
       pokemonCards.forEach(pokemon => {
